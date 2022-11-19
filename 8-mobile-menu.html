@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --Very-light-pink: #c7c7c7;
+            --Hospital-green: #ACD9B2;
+            --Text-input-field: #f7f7f7;
+            --Dark: #232830;
+            --black: #000000;
+            --white: #ffffff;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Inter', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu-container{
+            padding: 24px;
+            display: grid;
+            height: 100vh;
+            grid-template-rows: auto auto 1fr;
+        }
+
+        .mobile-menu-container .categories{
+            margin-bottom: 38px;
+        }
+
+        .mobile-menu-container .categories h1{
+            display: inline-block;
+            font-size: var(--lg);
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .mobile-menu-container ul:nth-child(2){
+            border-top: 1px solid var(--Very-light-pink);
+        }
+
+        .mobile-menu-container .categories li{
+            font-size: var(--md);
+            font-weight: bold;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .mobile-menu-container .categories li a{
+            text-decoration: none;
+            color: var(--black);
+            cursor: pointer;
+        }
+
+        .mobile-menu-container .account{
+            padding-top: 38px;
+        }
+
+        .mobile-menu-container .account li{
+            font-size: var(--md);
+            font-weight: bold;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .mobile-menu-container .account li a{
+            text-decoration: none;
+            color: var(--black);
+            cursor: pointer;
+        }
+
+        .mobile-menu-container .info-and-sing-out{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .mobile-menu-container .info-and-sing-out p{
+            font-size: var(--sm);
+        }
+
+        .mobile-menu-container .info-and-sing-out a{
+            text-decoration: none;
+            color: var(--Hospital-green);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mobile-menu-container">
+        <ul class="categories">
+
+            <h1>CATEGORIES</h1>
+
+            <li>
+                <a href="/">All</a>
+            </li>
+
+            
+            <li>
+                <a href="/">Clothes</a>
+            </li>
+
+            
+            <li>
+                <a href="/">Electronics</a>
+            </li>
+
+            
+            <li>
+                <a href="/">Furnitures</a>
+            </li>
+
+            
+            <li>
+                <a href="/">Toys</a>
+            </li>
+
+            
+            <li>
+                <a href="/">Other</a>
+            </li>
+
+        </ul>
+
+        <ul class="account">
+            
+            <li>
+                <a href="/">My orders</a>
+            </li>
+
+            
+            <li>
+                <a href="/">My account</a>
+            </li>
+
+        </ul>
+            
+        <div class="info-and-sing-out">
+            <p>Santiavilaacin@hotmail.com</p>
+            <a href="/">Sing out</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --Very-light-pink: #c7c7c7;
+            --Hospital-green: #ACD9B2;
+            --Text-input-field: #f7f7f7;
+            --Dark: #232830;
+            --black: #000000;
+            --white: #ffffff;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Inter', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .main-container{
+            --card-size: 240px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card-size));
+            place-content: center;
+            justify-content: space-evenly;
+        }
+
+        .main-container .product-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 8px;
+        }
+
+        .main-container .cards-container{
+            display: grid;
+            grid-template-rows: 1fr auto;
+        }
+
+        .main-container .cards-container img {
+            height: var(--card-size);
+            width: var(--card-size);
+            object-fit: cover;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .main-container .cards-container figure img{
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .main-container .cards-container .product-info-container div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+        }
+
+        .main-container .cards-container .product-info-container div p:nth-child(2){
+            font-size: var(--sm);
+            color: var(--Very-light-pink);
+        }
+
+        @media (max-width: 640px) {
+            .main-container{
+                --card-size: 140px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        <div class="cards-container">
+            <img src="https://images.unsplash.com/photo-1639006570490-79c0c53f1080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="product-info-container">
+                <div>
+                    <p>$30.000</p>
+                    <p>Gold Rolex</p>
+                </div>
+                <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="bt_add_to_cart">
+                </figure>
+            </div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>

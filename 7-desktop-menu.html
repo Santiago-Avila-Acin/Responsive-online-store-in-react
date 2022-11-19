@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --Very-light-pink: #c7c7c7;
+            --Hospital-green: #ACD9B2;
+            --Text-input-field: #f7f7f7;
+            --Dark: #232830;
+            --black: #000000;
+            --white: #ffffff;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Inter', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .desktop-menu{
+            width: 132px;
+            height: auto;
+            border: 1px solid var(--Very-light-pink);
+            border-radius: 6px;
+        }
+
+        .desktop-menu ul{
+            list-style: none;
+        }
+
+        .desktop-menu li{
+            font-size: var(--sm);
+            padding: 20px 20px 0px 20px;
+            text-align: end;
+        }
+
+        
+        .desktop-menu li:nth-child(1),.desktop-menu li:nth-child(2){
+            font-weight: bold;
+        }
+
+        .desktop-menu li:last-child{
+            padding-top: 20px;
+            border-top: 1px solid var(--Very-light-pink);
+        }
+
+        
+        .desktop-menu li a{
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color:var(--black)
+        }
+
+        .desktop-menu .sing-out a {
+            color: var(--Hospital-green);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+
+        <ul>
+
+            <li class="my-orders">
+                <a href="/">My orders</a>
+            </li>
+
+            <li class="my-account">
+                <a href="/">My account</a> 
+            </li>
+
+            <li class="sing-out">
+                <a href="/">Sing out</a>
+            </li>
+
+        </ul>
+
+    </div>
+</body>
+</html>
